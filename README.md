@@ -1,12 +1,76 @@
-# React + Vite
+# 🌐 Portfolio de Fakkugz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portfolio personal desarrollado con React y Vite. Aquí muestro mis proyectos, habilidades y trayectoria como desarrollador front-end.
 
-Currently, two official plugins are available:
+![Vista previa del portfolio](./public/preview.png) <!-- Reemplaza con la ruta a tu imagen de preview -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React
+- ⚡ Vite
+- 🎨 Material UI (MUI)
+- 💅 Styled Components
+- 🟦 TypeScript
+- 📧 EmailJS
+- ✨ tsParticles
+
+---
+
+## ✨ Características
+
+- Diseño moderno y responsive
+- Soporte para modo oscuro/claro
+- Animaciones de fondo con partículas interactivas
+- Navegación suave entre secciones: Inicio, Proyectos, Habilidades, Educación, Contacto
+- Formulario de contacto funcional con envío de mails vía EmailJS
+- Componentes reutilizables y organización modular
+
+---
+
+## 🛠️ Instalación y Ejecución Local
+
+```bash
+git clone https://github.com/fakkugz/portfolio-fakkugz.git
+cd portfolio-fakkugz
+npm install
+npm run dev
+```
+
+---
+
+## 🧪 Scripts
+
+- `npm run dev` – Inicia el servidor de desarrollo  
+- `npm run build` – Genera la app para producción  
+- `npm run preview` – Previsualiza la versión de producción  
+- `npm run deploy`– Despliega en GitHub Pages
+
+---
+
+## 🌐 Despliegue
+
+Este portfolio está desplegado mediante **GitHub Pages** y es accesible en:
+
+🔗 [https://fakkugz.github.io/portfolio-fakkugz](https://fakkugz.github.io/portfolio-fakkugz)
+
+---
+
+## 📬 Contacto
+
+- Email: fakku5@live.com.ar
+- LinkedIn: [linkedin.com/in/fakkugz](https://www.linkedin.com/in/facuendoegonzalez/)
+- GitHub: [github.com/fakkugz](https://github.com/fakkugz)
+
+---
+
+## 🏷️ Tags
+
+`portfolio` • `react` • `vite` • `frontend` • `personal-website` • `dark-mode` • `mui` • `styled-components` • `typescript`
+
+---
+
+## ©️ Licencia
+
+Este proyecto es de uso personal. Si deseas usarlo como base, no olvides dar créditos al autor 😊.
