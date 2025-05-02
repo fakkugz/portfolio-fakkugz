@@ -1,0 +1,94 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow-x: hidden;
+  min-width: 400px;
+}
+
+
+/* ANIMACION RESPLANDOR AVATAR */
+
+@keyframes pulseGlow {
+  0% {
+    filter: blur(2px) saturate(1.5)
+  }
+  50% {
+    filter: blur(20px) saturate(1.5)
+  }
+  100% {
+    filter: blur(2px) saturate(1.5)
+  }
+}
+
+@keyframes arrowPulse {
+  0% {
+    transform: translateX(1px) scale(1);
+  }
+  50% {
+    transform: translateX(-3px) scale(0.8);
+  }
+  100% {
+    transform: translateX(1px) scale(1);
+  }
+}
+
+/* ANIMACION SCROLL */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.appear-scroll {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+
+
+/* SCROLL */
+
+#root {
+  --sb-track-color: #002f44;
+  --sb-thumb-color: #52ffa9;
+  --sb-size: 12px;
+}
+
+#root::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+#root::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+#root::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  border: 2px solid #232e33;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  #root {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+
+
+
+
+
+
+
