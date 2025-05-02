@@ -12,7 +12,6 @@ Bienvenido a mi portfolio personal desarrollado con React y Vite. Aquí muestro 
 - ⚡ Vite
 - 🎨 Material UI (MUI)
 - 💅 Styled Components
-- 🟦 TypeScript
 - 📧 EmailJS
 - ✨ tsParticles
 
