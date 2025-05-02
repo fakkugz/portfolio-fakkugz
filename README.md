@@ -1,8 +1,6 @@
-# 🌐 Portfolio de Fakkugz
+# 🌐 Portfolio de FakkuGZ
 
 Bienvenido a mi portfolio personal desarrollado con React y Vite. Aquí muestro mis proyectos, habilidades y trayectoria como desarrollador front-end.
-
-![Vista previa del portfolio](./public/preview.png) <!-- Reemplaza con la ruta a tu imagen de preview -->
 
 ---
 
