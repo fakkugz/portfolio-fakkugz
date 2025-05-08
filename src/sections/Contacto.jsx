@@ -510,7 +510,7 @@ const Contacto = () => {
                                     backgroundColor: 'transparent',
                                 }
                             }}
-                            href="https://drive.google.com/file/d/13QoyiWB2BbXPoIuaKabt-wwLeiPn_6hs/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1pWwp-I0XZJ8wRj53PqMNZ5ulXO2q1lhf/view?usp=drive_link"
                             download="Facundo Gonzalez - CV Front End Developer.pdf"
                             target="_blank"
                         >

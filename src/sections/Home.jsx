@@ -572,7 +572,7 @@ const Home = () => {
                                     backgroundColor: 'transparent',
                                 }
                             }}
-                            href="https://drive.google.com/file/d/1x1rLppbB7dtxLcY_3Gt907gEv_s5gBH9/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1pWwp-I0XZJ8wRj53PqMNZ5ulXO2q1lhf/view?usp=drive_link"
                             download="Facundo Gonzalez - CV Front End Developer.pdf"
                             target="_blank"
                         >
