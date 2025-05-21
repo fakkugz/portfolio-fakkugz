@@ -15,6 +15,8 @@ import Css from '../components/logos/Css';
 import ReactJs from '../components/logos/ReactJs';
 import Mui from '../components/logos/Mui';
 import Bootstrap from '../components/logos/Bootstrap';
+import Redux from '../components/logos/Redux';
+import Zustand from '../components/logos/Zustand';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
@@ -35,6 +37,7 @@ const Proyectos = () => {
             img: [nova1, nova2, nova3],
             description: "Aplicación web de comercio electrónico. Listado de productos, filtros, carrito, productos favoritos, autenticación e historial. FakeStore API como fuente de datos.",
             css: "mui",
+            context: "redux",
             github: "https://github.com/fakkugz/novashop-ecommerce",
             liveview: "https://fakkugz.github.io/novashop-ecommerce/",
         },
@@ -44,6 +47,7 @@ const Proyectos = () => {
             img: [next1, next2, next3],
             description: "Aplicación web para la gestión de tareas. Organiza tus tareas de manera intuitiva mediante categorías, drag and drop, aplica filtros, edita, completa o elimina tareas.",
             css: "bootstrap",
+            context: "zustand",
             github: "https://github.com/fakkugz/nextask-administrador",
             liveview: "https://fakkugz.github.io/nextask-administrador/",
         },
@@ -51,10 +55,10 @@ const Proyectos = () => {
             id: 3,
             title: "Portfolio Web Personal",
             img: [port1, port2, port3],
-            description: "Aplicación web de comercio electrónico. Listado de productos, filtros, carrito, productos favoritos, autenticación e historial. FakeStore API como fuente de datos.",
+            description: "Presentación de proyectos, habilidades y contacto. Diseño responsivo, navegación fluida, animaciones y secciones organizadas para mostrar experiencia y trabajos realizados.",
             css: "mui",
-            github: "https://github.com/fakkugz/novashop-ecommerce",
-            liveview: "https://fakkugz.github.io/novashop-ecommerce/",
+            github: "https://github.com/fakkugz/portfolio-fakkugz",
+            liveview: "https://fakkugz.github.io/portfolio-fakkugz/",
         }
     ];
 
@@ -273,21 +277,27 @@ const Proyectos = () => {
                                     '& > *': {
                                         transition: 'all 0.3s ease',
                                     },
-                                    '& > :nth-of-type(1):hover': { // Primer icono (Html)
+                                    '& > :nth-of-type(1):hover': {
                                         transform: 'scale(1.3)',
-                                        filter: 'drop-shadow(3px 3px 2px rgba(255, 165, 0, 0.2))', // naranja suave
+                                        filter: 'drop-shadow(3px 3px 2px rgba(255, 165, 0, 0.2))',
                                     },
-                                    '& > :nth-of-type(2):hover': { // Segundo icono (Css)
+                                    '& > :nth-of-type(2):hover': {
                                         transform: 'scale(1.3)',
-                                        filter: 'drop-shadow(3px 3px 2px rgba(135, 206, 250, 0.2))', // celeste suave
+                                        filter: 'drop-shadow(3px 3px 2px rgba(135, 206, 250, 0.2))',
                                     },
-                                    '& > :nth-of-type(3):hover': { // Tercer icono (Bootstrap o Mui)
+                                    '& > :nth-of-type(3):hover': {
                                         transform: 'scale(1.3)',
-                                        filter: 'drop-shadow(3px 3px 2px rgba(200, 162, 255, 0.2))', // lila suave
+                                        filter: 'drop-shadow(3px 3px 2px rgba(200, 162, 255, 0.2))',
                                     },
-                                    '& > :nth-of-type(4):hover': { // Cuarto icono (ReactJs)
+                                    '& > :nth-of-type(4):hover': {
                                         transform: 'scale(1.3)',
-                                        filter: 'drop-shadow(3px 3px 2px rgba(127, 255, 212, 0.2))', // aguamarina suave
+                                        filter: 'drop-shadow(3px 3px 2px rgba(127, 255, 212, 0.2))',
+                                    },
+                                    '& > :nth-of-type(5):hover': {
+                                        transform: 'scale(1.3)',
+                                        filter: proyecto.context === 'redux' ?
+                                            'drop-shadow(3px 3px 2px rgba(234, 127, 255, 0.2))' :
+                                            'drop-shadow(3px 3px 2px rgba(255, 236, 127, 0.2))',
                                     },
                                 }}
                             >
@@ -295,6 +305,8 @@ const Proyectos = () => {
                                 <Css />
                                 {proyecto.css === "mui" ? <Mui /> : <Bootstrap />}
                                 <ReactJs />
+                                {proyecto.context === "redux" && <Redux />}
+                                {proyecto.context === "zustand" && <Zustand style={{ width: '1em', height: '1em' }}/>}
                             </Stack>
 
                         </Box>

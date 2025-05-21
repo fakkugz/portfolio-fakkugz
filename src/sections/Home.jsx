@@ -97,7 +97,7 @@ const Home = () => {
     const title = useDecodeText("// Frontend Developer");
 
     return (
-        <Box sx={{ mt: 9, mx: {xs: 1, sm: 3}, p: { xs: 1, sm: 4} }}>
+        <Box sx={{ mt: 9, mx: {xs: 1, sm: 3}, p: { xs: 1, sm: 4} }} id='home'>
             <Grid container spacing={4} sx={{ minHeight: '75vh' }}>
                 {/* Izquierda */}
                 <Grid size={{ xs: 12, md: 6 }}
@@ -142,7 +142,7 @@ const Home = () => {
                                 left: 0,
                                 width: '100%',
                                 height: '100%',
-                                background: 'linear-gradient(135deg, rgba(113, 255, 231, 0.74), rgba(93, 209, 255, 0.31))',
+                                background: isDarkMode ? 'linear-gradient(135deg, rgba(49, 114, 139, 0.31), rgba(27, 78, 70, 0.74))' : 'linear-gradient(135deg, rgba(113, 255, 231, 0.74), rgba(93, 209, 255, 0.31))',
                                 borderRadius: 6,
                                 zIndex: -1,
                                 pointerEvents: 'none',

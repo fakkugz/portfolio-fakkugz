@@ -116,7 +116,7 @@ const Education = () => {
                                     minWidth: {xs: '350px', sm: '480px'},
                                     borderRadius: '20px',
                                     background: isDarkMode ? 'rgba(255, 255, 255, 0.03)' :
-                                                'linear-gradient(-45deg, rgba(0, 49, 37, 0.8),rgba(0, 66, 87, 0.9))',
+                                                'linear-gradient(-45deg, rgba(0, 99, 129, 0.9), rgba(0, 102, 77, 0.8))',
                                     border: isDarkMode? '1px solid rgba(0, 255, 170, 0.2)' : '1px solid rgba(0, 206, 137, 0.8)',
                                     backdropFilter: 'blur(10px)',
                                     transform: 'translateZ(0)',

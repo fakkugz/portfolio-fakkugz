@@ -81,7 +81,7 @@ const NavBar = () => {
     >
       <Toolbar sx={{ position: 'relative', justifyContent: 'space-between', minHeight: { xs: '48px', sm: '48px' }, }}>
         {/* Logo */}
-        <Box sx={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ flex: 1, display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={() => handleScrollToSection('home')}>
           <Box
             component="img"
             src={isDarkMode ? logo1 : logo2 }
