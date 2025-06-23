@@ -572,7 +572,7 @@ const Home = () => {
                                     backgroundColor: 'transparent',
                                 }
                             }}
-                            href="https://drive.google.com/file/d/1pWwp-I0XZJ8wRj53PqMNZ5ulXO2q1lhf/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1HiQ8NqdsWWRPzLSvjwH4PAzaPAsNbEM7/view"
                             download="Facundo Gonzalez - CV Front End Developer.pdf"
                             target="_blank"
                         >
@@ -610,12 +610,12 @@ const Home = () => {
                                     fontSize: { xs: '0.8rem', md: '0.9rem', lg: '1.2rem'},
                                     fontWeight: '400',
                                     color: isDarkMode ? 'rgb(222, 242, 255)' : 'rgb(0, 50, 70)' }}>
-                                <span style={{ display: 'inline-block', filter: 'brightness(0.5)' }}>
+                                <span style={{ display: 'inline-block', filter: 'brightness(0.3)' }}>
                                     🎵
                                 </span>
                                 "¿Qué voy a hacer con tanto framework para mí?"<br />
                                 "¡Voy a codear, yo soy un bicho de React!"
-                                <span style={{ display: 'inline-block', filter: 'brightness(0.5)' }}>
+                                <span style={{ display: 'inline-block', filter: 'brightness(0.3)' }}>
                                     🎶
                                 </span>
                             </Typography>
@@ -687,7 +687,7 @@ const Home = () => {
                                     fontSize: { xs: '0.8rem', md: '0.9rem', lg: '1.2rem'},
                                     fontWeight: '400',
                                     color: isDarkMode ? 'rgb(222, 242, 255)' : 'rgb(0, 50, 70)' }}>
-                                <span style={{ display: 'inline-block', filter: 'brightness(0.5)' }}>
+                                <span style={{ display: 'inline-block', filter: 'brightness(0.3)' }}>
                                     🎶
                                 </span>
                                 "Yo lo codieeeeeeee ieeeeee eeeeee" 😎

@@ -9,7 +9,8 @@ const educationData = [
     {
         title: 'TALENTO TECH BA',
         year: '(2025)',
-        description: 'React JS Developer\n - EN CURSO',
+        description: 'React JS Developer',
+        description2: 'Typescript, Single Page Applications (SPA), React Router, Redux Toolkit, Zustand, Context API, Vite',
         image: tech,
     },
     {

@@ -2,6 +2,7 @@ import { Box, Paper, Typography } from '@mui/material';
 import Html from '../components/logos/Html';
 import Css from '../components/logos/Css';
 import Js from '../components/logos/Js';
+import Ts from '../components/logos/Ts';
 import ReactJs from '../components/logos/ReactJs';
 import Mui from '../components/logos/Mui';
 import Bootstrap from '../components/logos/Bootstrap';
@@ -27,6 +28,7 @@ const Skills = () => {
         <Html />,
         <Css />,
         <Js />,
+        <Ts />,
         <ReactJs />,
         <Bootstrap />,
         <Mui fontSize="95px" />,
@@ -50,6 +52,7 @@ const Skills = () => {
         'linear-gradient(135deg, rgba(187, 69, 0, 0.3), rgba(102, 32, 0, 0.3))',
         'linear-gradient(135deg, rgba(23, 91, 121, 0.3), rgba(4, 23, 99, 0.3))',
         'linear-gradient(135deg, rgba(129, 121, 28, 0.4), rgba(49, 45, 3, 0.4))',
+        'linear-gradient(135deg, rgba(28, 55, 129, 0.4), rgba(3, 32, 49, 0.4))',
         'linear-gradient(135deg, rgba(19, 107, 81, 0.3), rgba(19, 44, 33, 0.3))',
         'linear-gradient(135deg, rgba(35, 42, 65, 0.4), rgba(17, 36, 144, 0.4))',
         'linear-gradient(135deg, rgba(67, 124, 98, 0.5), rgba(27, 56, 73, 0.5))',
@@ -66,6 +69,7 @@ const Skills = () => {
         `3px 3px 6px rgba(163, 87, 43, ${opacityShadow})`,
         `3px 3px 6px rgba(43, 99, 163, ${opacityShadow})`,
         `3px 3px 6px rgba(161, 163, 43, ${opacityShadow})`,
+        `3px 3px 6px rgba(43, 99, 163, ${opacityShadow})`,
         `3px 3px 6px rgba(43, 163, 113, ${opacityShadow})`,
         `3px 3px 6px rgba(139, 43, 163, ${opacityShadow})`,
         `3px 3px 6px rgba(43, 109, 163, ${opacityShadow})`,

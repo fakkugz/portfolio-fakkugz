@@ -17,6 +17,7 @@ import Mui from '../components/logos/Mui';
 import Bootstrap from '../components/logos/Bootstrap';
 import Redux from '../components/logos/Redux';
 import Zustand from '../components/logos/Zustand';
+import Ts from '../components/logos/Ts';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
@@ -38,6 +39,7 @@ const Proyectos = () => {
             description: "Aplicación web de comercio electrónico. Listado de productos, filtros, carrito, productos favoritos, autenticación e historial. FakeStore API como fuente de datos.",
             css: "mui",
             context: "redux",
+            typescript: true,
             github: "https://github.com/fakkugz/novashop-ecommerce",
             liveview: "https://fakkugz.github.io/novashop-ecommerce/",
         },
@@ -278,27 +280,31 @@ const Proyectos = () => {
                                         transition: 'all 0.3s ease',
                                     },
                                     '& > :nth-of-type(1):hover': {
-                                        transform: 'scale(1.3)',
+                                        transform: 'scale(1.2)',
                                         filter: 'drop-shadow(3px 3px 2px rgba(255, 165, 0, 0.2))',
                                     },
                                     '& > :nth-of-type(2):hover': {
-                                        transform: 'scale(1.3)',
+                                        transform: 'scale(1.2)',
                                         filter: 'drop-shadow(3px 3px 2px rgba(135, 206, 250, 0.2))',
                                     },
                                     '& > :nth-of-type(3):hover': {
-                                        transform: 'scale(1.3)',
+                                        transform: 'scale(1.2)',
                                         filter: 'drop-shadow(3px 3px 2px rgba(200, 162, 255, 0.2))',
                                     },
                                     '& > :nth-of-type(4):hover': {
-                                        transform: 'scale(1.3)',
+                                        transform: 'scale(1.2)',
                                         filter: 'drop-shadow(3px 3px 2px rgba(127, 255, 212, 0.2))',
                                     },
                                     '& > :nth-of-type(5):hover': {
-                                        transform: 'scale(1.3)',
+                                        transform: 'scale(1.2)',
                                         filter: proyecto.context === 'redux' ?
                                             'drop-shadow(3px 3px 2px rgba(234, 127, 255, 0.2))' :
                                             'drop-shadow(3px 3px 2px rgba(255, 236, 127, 0.2))',
                                     },
+                                    '& > :nth-of-type(6):hover': {
+                                        transform: 'scale(1.2)',
+                                        filter: 'drop-shadow(3px 3px 2px rgba(135, 206, 250, 0.2))',
+                                    }
                                 }}
                             >
                                 <Html />
@@ -307,6 +313,7 @@ const Proyectos = () => {
                                 <ReactJs />
                                 {proyecto.context === "redux" && <Redux />}
                                 {proyecto.context === "zustand" && <Zustand style={{ width: '1em', height: '1em' }}/>}
+                                {proyecto.typescript && <Ts />}
                             </Stack>
 
                         </Box>

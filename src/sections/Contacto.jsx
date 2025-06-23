@@ -9,10 +9,13 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Snackbar, Alert } from '@mui/material';
 import { useThemeContext } from '../context/ThemeContext';
+import SuccessToast from '../components/SuccessToast';
 
 const Contacto = () => {
 
     const { isDarkMode } = useThemeContext();
+
+    const [openToast, setOpenToast] = useState(false);
 
     const form = useRef();
 
@@ -56,6 +59,7 @@ const Contacto = () => {
             email: '',
             message: '',
         });
+        setOpenToast(true);
     };
 
     return (
@@ -115,7 +119,9 @@ const Contacto = () => {
                                 variant="outlined"
                                 slotProps={{
                                     input: {
-                                        sx: { background: 'linear-gradient(165deg, rgb(240, 240, 240), rgb(207, 255, 239))' },
+                                        sx: { background: 'linear-gradient(165deg, rgb(240, 240, 240), rgb(207, 255, 239))',
+                                              color: 'black'
+                                         },
                                     },
                                 }}
                                 sx={{
@@ -157,7 +163,9 @@ const Contacto = () => {
                                 variant="outlined"
                                 slotProps={{
                                     input: {
-                                        sx: { background: 'linear-gradient(165deg, rgb(240, 240, 240), rgb(207, 255, 239))' },
+                                        sx: { background: 'linear-gradient(165deg, rgb(240, 240, 240), rgb(207, 255, 239))',
+                                              color: 'black'
+                                         },
                                     },
                                 }}
                                 sx={{
@@ -200,9 +208,9 @@ const Contacto = () => {
                                 variant="outlined"
                                 slotProps={{
                                     input: {
-                                        sx: {
-                                            background: 'linear-gradient(165deg, rgb(240, 240, 240), rgb(207, 255, 239))'
-                                        },
+                                        sx: { background: 'linear-gradient(165deg, rgb(240, 240, 240), rgb(207, 255, 239))',
+                                              color: 'black'
+                                         },
                                     },
                                 }}
                                 sx={{
@@ -262,6 +270,8 @@ const Contacto = () => {
                         </form>
                     </Paper>
                 </Grid>
+
+                <SuccessToast openToast={openToast} setOpenToast={setOpenToast} />
 
                 <Grid size={{ xs: 12, md: 6 }}>
                     <Box
@@ -510,7 +520,7 @@ const Contacto = () => {
                                     backgroundColor: 'transparent',
                                 }
                             }}
-                            href="https://drive.google.com/file/d/1MKx5pb_jEgB6gauD8J3b3kNhdhzMmiSW/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1HiQ8NqdsWWRPzLSvjwH4PAzaPAsNbEM7/view"
                             download="Facundo Gonzalez - CV Front End Developer.pdf"
                             target="_blank"
                         >
@@ -531,7 +541,7 @@ const Contacto = () => {
                         background: 'linear-gradient(135deg, rgba(0, 175, 122, 0.7), rgba(0, 109, 94, 0.7))',
                         color: '#eee',
                         '& .MuiAlert-icon': {
-                            color: '#dfffef', // ícono
+                            color: '#dfffef',
                         },
                     }}>
                     Email copiado al portapapeles
