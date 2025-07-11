@@ -8,11 +8,16 @@ import next3 from '../assets/images/next3.png';
 import port1 from '../assets/images/port1.png';
 import port2 from '../assets/images/port2.png';
 import port3 from '../assets/images/port3.png';
+import learnit1 from '../assets/images/learnit1.png';
+import learnit2 from '../assets/images/learnit2.png';
+import learnit3 from '../assets/images/learnit3.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Html from '../components/logos/Html';
 import Css from '../components/logos/Css';
+import Tailwind from '../components/logos/Tailwind';
 import ReactJs from '../components/logos/ReactJs';
+import Next from '../components/logos/Next';
 import Mui from '../components/logos/Mui';
 import Bootstrap from '../components/logos/Bootstrap';
 import Redux from '../components/logos/Redux';
@@ -32,6 +37,18 @@ const Proyectos = () => {
     const { isDarkMode } = useThemeContext();
 
     const proyectos = [
+        {
+            id: 0,
+            title: "LearnIT Courses",
+            img: [learnit1, learnit2, learnit3],
+            description: "Plataforma de cursos desarrollada con Next.js. Routing dinámico, renderizado híbrido (SSR/CSR), manejo de estado con Zustand, sistema de favoritos y carrito, autenticación y paginación.",
+            css: "tailwind",
+            context: "zustand",
+            typescript: true,
+            next: true,
+            github: "https://github.com/fakkugz/learnit-courses-platform",
+            liveview: "https://learnit-courses.vercel.app/",
+        },
         {
             id: 1,
             title: "NovaShop Ecommerce",
@@ -308,9 +325,11 @@ const Proyectos = () => {
                                 }}
                             >
                                 <Html />
-                                <Css />
-                                {proyecto.css === "mui" ? <Mui /> : <Bootstrap />}
+                                {proyecto.css === "tailwind" ? <Tailwind /> : <Css />}
+                                {proyecto.css === "mui" && <Mui />}
+                                {proyecto.css === "bootstrap" && <Bootstrap />}
                                 <ReactJs />
+                                {proyecto.next && <Next /> }
                                 {proyecto.context === "redux" && <Redux />}
                                 {proyecto.context === "zustand" && <Zustand style={{ width: '1em', height: '1em' }}/>}
                                 {proyecto.typescript && <Ts />}

@@ -19,7 +19,7 @@ const Contacto = () => {
 
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const sendEmail = () => {
         emailjs.sendForm('service_5njsxl9', 'template_hwgg9hw', form.current, 'iSEL9bBOsDkKEJIr8')
             .then((result) => {
                 console.log('Email enviado', result.text);
@@ -40,7 +40,7 @@ const Contacto = () => {
         try {
             await navigator.clipboard.writeText('fakku5@live.com.ar');
             setSnackbarOpen(true);
-        } catch (err) {
+        } catch {
             setSnackbarError(true);
         }
     };
@@ -520,7 +520,7 @@ const Contacto = () => {
                                     backgroundColor: 'transparent',
                                 }
                             }}
-                            href="https://drive.google.com/file/d/13eCm2ncuFrH8UFOw-U8YLKEMSWwF3KIN/view"
+                            href="https://drive.google.com/file/d/1kQtVdwqwQajBWYkf3lApi55fGReX06qj/view"
                             download="Facundo Gonzalez - CV Front End Developer.pdf"
                             target="_blank"
                         >

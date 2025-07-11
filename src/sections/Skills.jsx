@@ -4,13 +4,14 @@ import Css from '../components/logos/Css';
 import Js from '../components/logos/Js';
 import Ts from '../components/logos/Ts';
 import ReactJs from '../components/logos/ReactJs';
+import Next from '../components/logos/Next';
+import Tailwind from '../components/logos/Tailwind';
 import Mui from '../components/logos/Mui';
 import Bootstrap from '../components/logos/Bootstrap';
 import Python from '../components/logos/Python';
 import Github from '../components/logos/Github';
 import Premiere from '../components/logos/Premiere';
 import After from '../components/logos/After';
-import Lightroom from '../components/logos/Lightroom';
 import React from 'react';
 import { useThemeContext } from '../context/ThemeContext';
 
@@ -30,20 +31,22 @@ const Skills = () => {
         <Js />,
         <Ts />,
         <ReactJs />,
+        <Next />,
+        <Tailwind />,
         <Bootstrap />,
         <Mui fontSize="95px" />,
         <Python />,
         <Github />,
         <Premiere />,
         <After />,
-        <Lightroom />,
     ];
 
     const skillsIcons = rawIcons.map(icon =>
         React.cloneElement(icon, {
-            fontSize: icon.props.fontSize || iconStyles.fontSize,
+            size: '100px',
             style: {
-                ...iconStyles,
+                fontSize: '100px',
+                filter: 'drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6))',
             },
         })
     );
@@ -54,13 +57,15 @@ const Skills = () => {
         'linear-gradient(135deg, rgba(129, 121, 28, 0.4), rgba(49, 45, 3, 0.4))',
         'linear-gradient(135deg, rgba(28, 55, 129, 0.4), rgba(3, 32, 49, 0.4))',
         'linear-gradient(135deg, rgba(19, 107, 81, 0.3), rgba(19, 44, 33, 0.3))',
+        'linear-gradient(135deg, rgba(19, 44, 33, 0.3), rgba(19, 107, 81, 0.3))',
+        'linear-gradient(135deg, rgba(19, 94, 107, 0.3), rgba(19, 43, 44, 0.3))',
         'linear-gradient(135deg, rgba(35, 42, 65, 0.4), rgba(17, 36, 144, 0.4))',
         'linear-gradient(135deg, rgba(67, 124, 98, 0.5), rgba(27, 56, 73, 0.5))',
         'linear-gradient(135deg, rgba(112, 114, 15, 0.4), rgba(32, 26, 88, 0.4))',
         'linear-gradient(135deg, rgba(113, 146, 236, 0.2), rgba(66, 172, 204, 0.2))',
         'linear-gradient(135deg, rgba(130, 32, 86, 0.5), rgba(148, 96, 118, 0.5))',
         'linear-gradient(135deg, rgba(44, 59, 108, 0.5), rgba(26, 52, 126, 0.5))',
-        'linear-gradient(135deg, rgba(76, 163, 112, 0.4), rgba(76, 114, 150, 0.4))',
+
     ];
 
     const opacityShadow = isDarkMode ? 0.3 : 0.7
@@ -71,13 +76,14 @@ const Skills = () => {
         `3px 3px 6px rgba(161, 163, 43, ${opacityShadow})`,
         `3px 3px 6px rgba(43, 99, 163, ${opacityShadow})`,
         `3px 3px 6px rgba(43, 163, 113, ${opacityShadow})`,
+        `3px 3px 6px rgba(43, 163, 113, ${opacityShadow})`,
+        `3px 3px 6px rgba(43, 99, 163, ${opacityShadow})`,
         `3px 3px 6px rgba(139, 43, 163, ${opacityShadow})`,
         `3px 3px 6px rgba(43, 109, 163, ${opacityShadow})`,
         `3px 3px 6px rgba(163, 151, 43, ${opacityShadow})`,
         `3px 3px 6px rgba(163, 43, 127, ${opacityShadow})`,
         `3px 3px 6px rgba(163, 43, 109, ${opacityShadow})`,
         `3px 3px 6px rgba(109, 43, 163, ${opacityShadow})`,
-        `3px 3px 6px rgba(43, 149, 163, ${opacityShadow})`,
     ];
 
     return (

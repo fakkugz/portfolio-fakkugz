@@ -30,7 +30,7 @@ const Home = () => {
         try {
             await navigator.clipboard.writeText('fakku5@live.com.ar');
             setSnackbarOpen(true);
-        } catch (err) {
+        } catch {
             setSnackbarError(true);
         }
     };
@@ -572,7 +572,7 @@ const Home = () => {
                                     backgroundColor: 'transparent',
                                 }
                             }}
-                            href="https://drive.google.com/file/d/13eCm2ncuFrH8UFOw-U8YLKEMSWwF3KIN/view"
+                            href="https://drive.google.com/file/d/1kQtVdwqwQajBWYkf3lApi55fGReX06qj/view"
                             download="Facundo Gonzalez - CV Front End Developer.pdf"
                             target="_blank"
                         >
@@ -635,7 +635,6 @@ const Home = () => {
                             maxHeight: 74,
                             mb: 2,
                             width: '94%',
-                            mb: 2,
                             alignSelf: 'center',
                             boxShadow: isDarkMode ? '3px 3px rgba(0, 82, 61, 0.8)' : '3px 3px rgba(0, 173, 130, 0.8)',
                             transition: 'transform 0.3s, box-shadow 0.3s',
@@ -670,7 +669,6 @@ const Home = () => {
                             maxHeight: 74,
                             mb: 2,
                             width: '94%',
-                            mb: 2,
                             alignSelf: 'center',
                             boxShadow: isDarkMode ? '3px 3px rgba(0, 82, 61, 0.8)' : '3px 3px rgba(0, 173, 130, 0.8)',
                             transition: 'transform 0.3s, box-shadow 0.3s',
